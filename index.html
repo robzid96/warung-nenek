@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,25 +23,25 @@
     <main>
       <section id="daftar-produk">
         <h2>Menu Pilihan</h2>
-        <p>Segera hadir menu pilihan di Warung Nenek</p>
+        <img src="img/product/Klepon.webp" alt="Foto Jajanan Klepon" width="200px">
       </section>
       <section id="form-pemesanan">
         <h2>Form Pemesanan</h2>
         <form action="">
-            <label for="nama">Nama :</label><br>
-            <input type="text" name="nama" id="nama"><br><br>
-            <label for="alamat">Alamat :</label><br>
-            <input type="text" name="alamat" id="alamat"><br><br>
-            <label for="jumlah">Jumlah :</label><br>
-            <input type="number" name="jumlah" id="jumlah"><br><br>
-            <label for="kategori">Kategori :</label><br>
-            <select name="kategori" id="kategori">
-                <option value="makanan">Makanan</option>
-                <option value="minuman">Minuman</option>
-                <option value="cemilan">Cemilan</option>
-            </select><br><br>
+          <label for="nama">Nama :</label><br />
+          <input type="text" name="nama" id="nama" required /><br /><br />
+          <label for="alamat">Alamat :</label><br />
+          <input type="text" name="alamat" id="alamat" required /><br /><br />
+          <label for="jumlah">Jumlah :</label><br />
+          <input type="number" name="jumlah" id="jumlah" min="1" required /><br /><br />
+          <label for="kategori">Kategori :</label><br />
+          <select name="kategori" id="kategori" required>
+            <option value="makanan">Makanan</option>
+            <option value="minuman">Minuman</option>
+            <option value="cemilan">Cemilan</option></select
+          ><br /><br />
 
-            <button type="submit">Kirim!</button>
+          <button type="submit">Kirim!</button>
         </form>
       </section>
     </main>
